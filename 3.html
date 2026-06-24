@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3. Врач</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li>О клинике</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+
+        <section class="s-doc-about">
+          <div class="contain">
+            <div class="doc-about">
+              <div class="doc-about__l">
+                <img src="./img/doc.jpg" alt="">
+              </div>
+              <div class="doc-about__r">
+                <div class="doc-about__name">Рачинский Денис Сергеевич</div>
+                <div class="doc-about__dol">Руководитель клиники, невролог, травматолог, ортопед, хирург, диагност</div>
+                <div class="doc-about__text">Член Ассоциации практикующих ветеринарных врачей, ИРСО, Действительным членом Санкт-Петербургского ветеринарного общества и постоянным участником Конференций и семинаров по травматологии, рентгенологии, ортопедии и неврологии.</div>
+                <div class="doc-about__info">
+                  <div class="about-info__item">
+                    <img src="./img/bag.svg" alt="">
+                    <div class="about-info__r">
+                      <p>Опыт работы</p>
+                      <span>30 лет</span>
+                    </div>
+                  </div>
+                  <div class="about-info__item">
+                    <img src="./img/cat.svg" alt="">
+                    <div class="about-info__r">
+                      <p>Цена приема</p>
+                      <span>от 3000 ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="doc-about__actions">
+                  <a href="" class="btn">Записаться на приём</a>
+                  <a href="" class="btn _blue">Оставить отзыв</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-dabout">
+          <div class="contain">
+            <div class="h2">Оказываемые <span>услуги</span></div>
+            <div class="doctors__sort dabout__sort">
+              <ul>                  
+                <li><a href="">Хирургия</a></li>
+                <li><a href="">Травмотология</a></li>
+                <li><a href="">Ортопедия</a></li>
+                <li><a href="">Неврология</a></li>
+                <li><a href="">Рентген</a></li>
+                <li><a href="">Диспансеризация</a></li>
+                <li><a href="">Онлайн консультации</a></li>
+              </ul>
+            </div>                  
+          </div>
+        </section>
+
+        <section class="s-dservices">
+          <div class="contain">
+            <div class="h2">О враче</div>
+            <div class="dservices">
+              <div class="dservices__l">
+                <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+              </div>
+              <div class="dservices__r">
+                <a href="./video/hero.mp4" data-fancybox="mvideo">
+                  <img src="./img/dabout-vid-prev.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-doctor-p">
+          <div class="contain">
+            <div class="doctor-p__item">
+              <div class="h2">Образование</div>
+              <ul>
+                <li>
+                  <p>1992</p>
+                  <span>Волоколамский зооветеринарный техникум — ветеринарный фельдшер</span>
+                </li>
+                <li>
+                  <p>1998</p>
+                  <span>Московская ветеринарная академия</span>
+                </li>
+                <li>
+                  <p>1998</p>
+                  <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="doctor-p__item">
+              <div class="h2">Работа</div>
+              <ul class="doctor-ul--ended">
+                <li>            
+                  <span>Ветеринарный врач в ветклинике «Ахилл»</span>
+                </li>
+                <li>
+                  <span>Ветеринарный врач в ветклинике «КлинВет»</span>
+                </li>
+                <li>
+                  <span>Ветеринарный врач в ветклинике «Доктор Ай»</span>
+                </li>
+                <li>
+                  <span>Заведующий лечебным отделением в Солнечногорской городской СББЖ</span>
+                </li>
+              </ul>
+            </div><!---->
+
+            <div class="doctor-p__item">
+              <div class="h2">Доп образование/повышение квалификации</div>
+
+              <div class="open-element">
+                <ul class="ul-more-open open-content">
+                  <li>
+                    <p>1992</p>
+                    <span>Волоколамский зооветеринарный техникум — ветеринарный фельдшер</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Московская ветеринарная академия</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                  <li>
+                    <p>1998</p>
+                    <span>Обучение в Клинике доктора Сотникова в городе Санкт-Петербург по ортопедии и неврологии</span>
+                  </li>
+                </ul>        
+                <a href="#" class="read-ful show-more toggle" data-swap="Скрыть" data-text="Показать все">Показать все</a>
+              </div>
+            </div><!---->
+          </div>
+        </section>
+        @@include('var/_s-docs5.html')
+
+        <section class="s-mblog">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2"><span>Истории</span> пациентов</div>
+              <a href="" class="see-all _inv" data-da=",.show-more__wrap,991,0">Все истории</a>
+            </div>
+          </div>
+          <div class="cpadding">
+            <div class="blog__list mblog__list">              
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-3.jpg",
+                "lbl": "История",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-3.jpg",
+                "lbl": "История",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-3.jpg",
+                "lbl": "История",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+            </div>
+            <div class="show-more__wrap"></div>
+          </div>
+        </section>
+        <section class="s-dreviews">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2"><span>Отзывы</span> пациентов</div>
+              <a href="" class="see-all _inv">Все отзывы</a>
+            </div>
+            <div class="dreviews__list">
+              @@include('var/_reviews__item.html')
+              @@include('var/_reviews__item.html')
+              @@include('var/_reviews__item.html')
+              @@include('var/_reviews__item.html')
+            </div>
+          </div>
+        </section>
+        <section class="s-mdoctors">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2">Другие <span>врачи</span></div>
+              <a href="" class="see-all _inv">Все врачи</a>
+            </div>
+          </div>
+          <div class="cpadding">
+            <div class="mdoctors__sl">
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-1.jpg",
+                "name":"Рачинский Денис Сергеевич",
+                "dol":"Руководитель клиники, врач",
+                "text":"Неврология, травматология, ортопедия, хирургия, рентген-диагностика"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-2.jpg",
+                "name":"Абдуллина Алина Минтагировна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-3.jpg",
+                "name":"Васильева Виктория Вадимовна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-4.jpg",
+                "name":"Графкина Наталья Сергеевна",
+                "dol":"Ветеринарный врач",
+                "text":"Иерапия, УЗ-диагностика, гастроэнтерология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-5.jpg",
+                "name":"Грунтова Маргарита Сергеевна",
+                "dol":"Руководитель клиники, врач",
+                "text":"Терапия, стоматология"
+              })
+            </div>
+          </div>
+        </section>
+      </div><!--inner-page-->
+    </main>
+    @@include('var/_footer.html')
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

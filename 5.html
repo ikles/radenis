@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>5. Акция</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li><a href="">Акции</a></li>
+              <li>«Полная защита» — максимальный уход по выгодной цене!</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+
+        <section class="s-spromo">
+          <div class="contain">
+            <div class="spromo__row">
+              <div class="spromo__l">
+                <h1 class="page-h1">«Полная защита» — максимальный уход по выгодной цене!</h1>              
+                <p>Мы запускаем уникальную акцию: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок! </p>
+                <span class="promo__date spromo__date">с 1 по 30 ноября</span>
+                <a href="" class="btn _lg">Записать питомца</a>                
+                <p>Дорогие друзья, мы знаем, как важно поддерживать здоровье ваших пушистых любимцев на высшем уровне.  Именно поэтому мы разработали специальное предложение, которое поможет вам позаботиться о благополучии вашего питомца максимально эффективно!  </p>                
+              </div>
+              <img src="./img/spromo1.jpg" alt="" class="spromo__img">
+            </div>
+            <div class="spromo__title">Что включает в себя наш профессиональный осмотр:</div>
+            <ul>
+              <li>Комплексная оценка состояния здоровья питомца</li>
+              <li>Выявление скрытых проблем на ранней стадии </li>
+              <li>Персональные рекомендации по уходу и питанию</li>
+              <li>Консультации опытного ветеринара</li>              
+            </ul>
+            <p>Такой подход позволяет не только защитить вашего питомца от опасных заболеваний с помощью вакцинации, но и убедиться, что он абсолютно здоров во всех отношениях.</p>
+            <p>Не откладывайте заботу о здоровье любимца на потом!  Запишитесь на вакцинацию прямо сейчас и получите профессиональный осмотр в подарок. </p>
+            <p>Подарите своему питомцу заботу, которую он заслуживает!  Количество мест по акции ограничено. </p>
+          </div>
+        </section>
+
+        <section class="s-opromo">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2">Другие <span>акции</span></div>
+              <a href="" class="see-all">Все акции</a>
+            </div>
+            <div class="promo__list opromo__list">
+             @@include('var/_promo__item.html',{
+               "title":"«Полная защита» — максимальный уход по выгодной цене!", 
+               "img": "./img/promo-1.png",
+               "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+             })
+             @@include('var/_promo__item.html',{
+               "title":"-35% на чекап для собак и кошек",
+               "img": "./img/promo-2.png",
+               "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+             })
+           </div>
+         </div>
+       </section>
+
+
+
+     </div><!--inner-page-->
+   </main>
+   @@include('var/_footer.html')
+ </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

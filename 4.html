@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4. Акции</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li>О клинике</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+        <section class="s-ppromo">
+          <div class="contain">
+            <h1 class="page-h1">Акции</h1>
+            <div class="promo__list">
+             @@include('var/_promo__item.html',{
+               "title":"«Полная защита» — максимальный уход по выгодной цене!", 
+               "img": "./img/promo-1.png",
+               "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+             })
+             @@include('var/_promo__item.html',{
+               "title":"-35% на чекап для собак и кошек",
+               "img": "./img/promo-2.png",
+               "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+             })
+             @@include('var/_promo__item.html',{
+               "title":"«Полная защита» — максимальный уход по выгодной цене!", 
+               "img": "./img/promo-1.png",
+               "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+             })
+             @@include('var/_promo__item.html',{
+               "title":"-35% на чекап для собак и кошек",
+               "img": "./img/promo-2.png",
+               "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+             })
+           </div>
+         </div>
+       </section>
+       
+     </div><!--inner-page-->
+   </main>
+   @@include('var/_footer.html')
+ </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

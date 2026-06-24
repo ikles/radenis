@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7. Отзывы</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li>Отзывы</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+        <section class="s-reviews">
+         <div class="contain">
+          <div class="h1__wrap h1__wrap--reviews">
+           <h1 class="h1-page">Отзывы</h1>
+           <div class="reviews__actions">
+            <div class="reviews__actions-selected"><span>Выберите cпециалиста</span> <i></i></div>
+            <div class="reviews__actions-open">
+              <ul>
+               <li><a href="">Рачинский Денис Сергеевич</a></li>
+               <li><a href="">Абдуллина Алина Минтагировна</a></li>
+               <li><a href="">Васильева Виктория Вадимовна</a></li>
+               <li><a href="">Графкина Наталья Сергеевна</a></li>
+               <li><a href="">Грунтова Маргарита Сергеевна</a></li>
+               <li><a href="">Дубинина Вера Александровна</a></li>
+               <li><a href="">Кукольникова Анастасия Сергеевна</a></li>
+               <li><a href="">Васильева Виктория Вадимовна</a></li>
+               <li><a href="">Графкина Наталья Сергеевна</a></li>
+               <li><a href="">Грунтова Маргарита Сергеевна</a></li>
+               <li><a href="">Васильева Виктория Вадимовна</a></li>
+               <li><a href="">Графкина Наталья Сергеевна</a></li>
+               <li><a href="">Грунтова Маргарита Сергеевна</a></li>
+               <li><a href="">Васильева Виктория Вадимовна</a></li>
+               <li><a href="">Графкина Наталья Сергеевна</a></li>
+               <li><a href="">Грунтова Маргарита Сергеевна</a></li>
+               <li><a href="">Васильева Виктория Вадимовна</a></li>
+               <li><a href="">Графкина Наталья Сергеевна</a></li>
+               <li><a href="">Грунтова Маргарита Сергеевна</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       <div class="reviews__list">
+         @@include('var/_reviews__item.html')
+         @@include('var/_reviews__item.html')
+         @@include('var/_reviews__item.html')
+         @@include('var/_reviews__item.html')
+         @@include('var/_reviews__item.html')
+         @@include('var/_reviews__item.html')
+       </div>
+       <div class="show-more__wrap">
+        <a href="" class="show-more-btn">Показать еще</a>
+      </div>
+    </div>     
+  </section>
+  <div class="hform hform--dogcat hform--reviews">
+    <div class="contain">      
+      <div class="hform__row">
+        <img class="hform__img" src="./img/form-dogcat.png" alt="">
+        <div class="hform__l">
+          <div class="hform__h1 h1 _wh">Оставить свой отзыв</div>            
+          <form>
+            <input type="text" placeholder="Ваше имя">
+            <div class="reviews-form__col-50">
+              <select name="" id="">
+                <option value="Выберите врача">Выберите врача</option>
+                <option value="Выберите врача">Выберите врача</option>
+                <option value="Выберите врача">Выберите врача</option>
+                <option value="Выберите врача">Выберите врача</option>
+              </select>                
+            </div>
+            <textarea name="" id="" placeholder="Ваш комментарий"></textarea>
+            <input class="btn" type="submit" value="Отправить">
+          </form>
+          <div class="hform__req">Нажимая на кнопку “Записаться” , Вы подтверждаете, что ознакомлены с <a href="">Политикой конфиденциальности</a></div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div><!--inner-page-->
+</main>
+@@include('var/_footer.html')
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

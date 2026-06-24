@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12. История пациента</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Истории пациентов</a></li>
+              <li>Иногда для диагноза требуется 10 минут времени</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+        <div class="history">
+          <div class="contain">
+            <div class="history__row">
+              <div class="history__l">
+                <div class="history__h2 h2">Иногда для диагноза требуется 10 минут времени</div>
+                <div class="h4">Что беспокоило питомца?</div>
+                <p>В этой статье вместе с ветеринарными врачами клиники «Раденис» разберём, когда кастрация может быть полезна коту, как снизить риски во время операции и как помочь питомцу восстановиться спокойно и без лишнего стресса. 
+                </p>
+                <div class="h4">Лечащий врач</div>
+                <a href="" class="doctor-name">Светлакова Алёна Андреевна</a>
+              </div>
+              <div class="history__r">
+                <div class="history__sl">
+                  <div class="history__slide"><img src="./img/histroy-sl-1.jpg" alt=""></div>
+                  <div class="history__slide"><img src="./img/histroy-sl-1.jpg" alt=""></div>
+                  <div class="history__slide"><img src="./img/histroy-sl-1.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="history__desc content">
+          <div class="contain">
+            <div class="h4">Описание</div>
+            <p>Сегодня мы хотим рассказать о необычной патологии, с которой наш стационар столкнулся совсем недавно.</p>
+            <p>К нам поступил котик после лечения в другой клинике — его хозяев очень тревожили шаткая походка, вынужденный наклон головы и выраженная болезненность шеи. На первый взгляд симптомы могли указывать на неврологическое заболевание, но истинная причина оказалась иной.</p>
+            <p>Наши специалисты диагностировали вентрофлексию. В данном случае она развилась из-за выраженного снижения уровня калия.</p>
+            <p>К нам поступил котик после лечения в другой клинике — его хозяев очень тревожили шаткая походка, вынужденный наклон головы и выраженная болезненность шеи. На первый взгляд симптомы могли указывать на неврологическое заболевание, но истинная причина оказалась иной.</p>
+            <div class="h4">Пациент страдает хронической болезнью почек, однако такие симптомы крайне нетипичны для ХБП:</div>
+            <ul>
+              <li>аппетит сохранён</li>
+              <li>рвоты не было</li>
+              <li>общее состояние не указывало на тяжёлую декомпенсацию.</li>
+            </ul>
+            <div class="bloq2">
+              <div class="h4">Результат</div>
+              <p>В нашем случае всё решилось своевременным введением калия. Такие ситуации напоминают, насколько важно комплексное обследование и внимательное отношение к малейшим изменениям в поведении питомца. Вовремя подмеченные симптомы — шанс на быстрое выздоровление.</p>
+            </div>
+          </div>
+        </div>
+        @@include('var/_hform.html')
+        <section class="s-mblog">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2">Другие <span>Истории</span></div>
+              <a href="" class="see-all _inv" data-da=",.show-more__wrap,991,0">Все истории</a>
+            </div>
+          </div>
+          <div class="cpadding">
+            <div class="blog__list mblog__list">              
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-3.jpg",
+                "lbl": "История",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-3.jpg",
+                "lbl": "История",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-3.jpg",
+                "lbl": "История",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+            </div>
+            <div class="show-more__wrap"></div>
+          </div>
+        </section>
+      </div><!--inner-page-->
+    </main>
+    @@include('var/_footer.html')
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>11. Блог</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li>Блог</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+        <section class="s-blog">
+          <div class="contain">
+            <h1 class="h1-page">Блог</h1>
+          </div>
+          <div class="doctors__sort">        
+            <div class="contain">
+              <ul>
+                <li class="current"><a href="">Все</a></li>
+                <li><a href="">Новости</a></li>
+                <li><a href="">Статьи</a></li>
+                <li><a href="">Истории пациентов</a></li>
+              </ul>
+            </div>      
+          </div>
+          <div class="contain">
+        <div class="blog__list">
+
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-1.jpg",
+            "lbl": "Новость",
+            "title":"«Полная защита» — максимальный уход по выгодной цене!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-2.jpg",
+            "lbl": "Статья",
+            "title":"Новая эра диагностики! Коагулограмма и ПЦР-исследования теперь прямо на приёме!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-3.jpg",
+            "lbl": "История",
+            "title":"Иногда для диагноза требуется 10 минут времени"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-1.jpg",
+            "lbl": "Новость",
+            "title":"«Полная защита» — максимальный уход по выгодной цене!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-2.jpg",
+            "lbl": "Статья",
+            "title":"Новая эра диагностики! Коагулограмма и ПЦР-исследования теперь прямо на приёме!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-3.jpg",
+            "lbl": "История",
+            "title":"Иногда для диагноза требуется 10 минут времени"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-1.jpg",
+            "lbl": "Новость",
+            "title":"«Полная защита» — максимальный уход по выгодной цене!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-2.jpg",
+            "lbl": "Статья",
+            "title":"Новая эра диагностики! Коагулограмма и ПЦР-исследования теперь прямо на приёме!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-3.jpg",
+            "lbl": "История",
+            "title":"Иногда для диагноза требуется 10 минут времени"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-1.jpg",
+            "lbl": "Новость",
+            "title":"«Полная защита» — максимальный уход по выгодной цене!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-2.jpg",
+            "lbl": "Статья",
+            "title":"Новая эра диагностики! Коагулограмма и ПЦР-исследования теперь прямо на приёме!"
+          })
+          @@include('var/_blog__item.html',{
+            "img":"./img/blog-3.jpg",
+            "lbl": "История",
+            "title":"Иногда для диагноза требуется 10 минут времени"
+          })
+        </div>
+        <div class="show-more__wrap">
+          <a href="" class="show-more-btn">Показать еще</a>
+        </div>
+      </div>
+    </section>
+
+  </div><!--inner-page-->
+</main>
+@@include('var/_footer.html')
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

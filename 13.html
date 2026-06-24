@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>13. Новость</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Новости</a></li>
+              <li>Иногда для диагноза требуется 10 минут времени!</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+        <section class="news-page content">
+          <div class="contain">
+            <h1>Новая эра диагностики! Коагулограмма и ПЦР-исследования теперь прямо на приёме!</h1>
+            <p>Наша ветеринарная лаборатория пополнилась новым современным оборудованием, которое значительно ускорит и улучшит качество диагностики! Теперь врач может провести ПЦР-диагностику инфекционных заболеваний кошек и собак прямо во время приёма!</p>
+            <div class="h4">Точная ПЦР-диагностика за один визит</div>
+            <p>Наши новые тест-системы методом ПЦР в режиме реального времени позволяют быстро и <br> точно определить наиболее распространенные инфекции: </p>
+            <ul>
+              <li>Анаплазмоз</li>
+              <li>Парвовирус кошек (вирус панлейкопении) </li>
+              <li>Парвовирус собак (вирусный энтерит) </li>
+              <li>Бабезиоз</li>
+              <li>Респираторный профиль собак: чума плотоядных; парагрипп; аденовирус; бордетеллез</li>
+              <li>Респираторный профиль кошек: калицивирус; ринотрахеит; микоплазмоз; хламидиоз; бордетеллез</li>
+              <li>Вирусная лейкемия кошек (FeLV)</li>
+              <li>Вирусный иммунодефицит кошек (FIV)</li>
+              <li>Трихомоноз/лямблиоз</li>              
+            </ul>
+            <div class="h4">Коагулограмма — теперь и в нашей клинике</div>
+            <p>Мы уже давно используем общеклинический и биохимический анализаторы для диагностики показателей крови на приёме. Теперь наши специалисты при необходимости могут изучить и показатели свёртываемости крови (коагулограмму).</p>
+            <p>Анализатор свёртываемости крови (коагулометр) применяется для количественного измерения:</p>
+            <ul>
+              <li>Протромбинового времени (PT)</li>
+              <li>Активированного частичного тромбопластинового времени (APTT)</li>
+              <li>Фибриногена (FIB)</li>
+              <li>Тромбинового времени (TT)</li>
+              <li>Активированного времени свёртывания (ACT)</li>              
+            </ul>
+            <div class="h4">Что это значит для вас и ваших питомцев?</div>
+            <p>С новым оборудованием мы сможем быстрее и точнее выявлять заболевания у ваших любимцев. Это позволяет нам незамедлительно начинать своевременное лечение и делать всё возможное для их скорейшего выздоровления.</p>
+
+            <div class="news-page__date">16.09.2025</div>          
+          </div>
+        </section>
+        <section class="s-mblog">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2">Другие <span>новости</span></div>
+              <a href="" class="see-all _inv" data-da=",.show-more__wrap,991,0">Все истории</a>
+            </div>
+          </div>
+          <div class="cpadding">
+            <div class="blog__list mblog__list">              
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-1.jpg",
+                "lbl": "Новость",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-1.jpg",
+                "lbl": "Новость",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-1.jpg",
+                "lbl": "Новость",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+            </div>
+            <div class="show-more__wrap"></div>
+          </div>
+        </section>
+      </div><!--inner-page-->
+    </main>
+    @@include('var/_footer.html')
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

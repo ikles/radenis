@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. Наши врачи</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="inner-page">
+        <div class="bread">
+          <div class="contain">
+            <ul>
+              <li><a href="">Главная</a></li>
+              <li>О клинике</li>              
+            </ul>
+          </div>
+        </div><!--bread-->
+
+        <section class="s-doctors">
+          <div class="contain">
+            <h1 class="h1-page">Наши врачи</h1>
+          </div>
+          <div class="doctors__sort">        
+            <div class="contain">
+              <ul>
+                <li class="current"><a href="">Все</a></li>
+                <li><a href="">Терапевт</a></li>
+                <li><a href="">Реаниматолог</a></li>
+                <li><a href="">Анестезиолог</a></li>
+                <li><a href="">Хирург</a></li>
+                <li><a href="">Ортопед</a></li>
+                <li><a href="">Невролог</a></li>
+                <li><a href="">Кардиолог</a></li>
+                <li><a href="">Пульмонолог</a></li>
+                <li><a href="">Гастроэнтеролог</a></li>
+                <li><a href="">Нефролог</a></li>
+                <li><a href="">Онколог</a></li>
+                <li><a href="">Дерматолог</a></li>
+                <li><a href="">Стоматолог</a></li>
+                <li><a href="">Травмотолог</a></li>
+                <li><a href="">Уролог</a></li>
+                <li><a href="">Эндокринолог</a></li>          
+              </ul>
+            </div>      
+          </div>
+          <div class="contain">
+            <div class="doctors__list">
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-1.jpg",
+                "name":"Рачинский Денис Сергеевич",
+                "dol":"Руководитель клиники, врач",
+                "text":"Неврология, травматология, ортопедия, хирургия, рентген-диагностика"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-2.jpg",
+                "name":"Абдуллина Алина Минтагировна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-3.jpg",
+                "name":"Васильева Виктория Вадимовна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-4.jpg",
+                "name":"Графкина Наталья Сергеевна",
+                "dol":"Ветеринарный врач",
+                "text":"Иерапия, УЗ-диагностика, гастроэнтерология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-5.jpg",
+                "name":"Грунтова Маргарита Сергеевна",
+                "dol":"Руководитель клиники, врач",
+                "text":"Терапия, стоматология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-6.jpg",
+                "name":"Абдуллина Алина Минтагировна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-7.jpg",
+                "name":"Дубинина Вера Александровна",
+                "dol":"Ветеринарный врач",
+                "text":"Кардиология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-8.jpg",
+                "name":"Кукольникова Анастасия Сергеевна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, офтальмология"
+              })
+
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-1.jpg",
+                "name":"Рачинский Денис Сергеевич",
+                "dol":"Руководитель клиники, врач",
+                "text":"Неврология, травматология, ортопедия, хирургия, рентген-диагностика"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-2.jpg",
+                "name":"Абдуллина Алина Минтагировна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-3.jpg",
+                "name":"Васильева Виктория Вадимовна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-4.jpg",
+                "name":"Графкина Наталья Сергеевна",
+                "dol":"Ветеринарный врач",
+                "text":"Иерапия, УЗ-диагностика, гастроэнтерология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-5.jpg",
+                "name":"Грунтова Маргарита Сергеевна",
+                "dol":"Руководитель клиники, врач",
+                "text":"Терапия, стоматология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-6.jpg",
+                "name":"Абдуллина Алина Минтагировна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, онкология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-7.jpg",
+                "name":"Дубинина Вера Александровна",
+                "dol":"Ветеринарный врач",
+                "text":"Кардиология"
+              })
+              @@include('var/_doctors__item.html',{
+                "img":"./img/doctor-8.jpg",
+                "name":"Кукольникова Анастасия Сергеевна",
+                "dol":"Ветеринарный врач",
+                "text":"Терапия, офтальмология"
+              })
+            </div>      
+          </div>
+        </section>
+
+        
+      </div><!--inner-page-->
+    </main>
+    @@include('var/_footer.html')
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

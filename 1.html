@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1. Главная</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="s-banner">
+        <div class="contain">
+          <div class="banner">
+            <div class="banner__inner"> 
+              <!-- Фоновое видео для десктопа -->
+              <video class="video-desktop" 
+              autoplay muted loop playsinline webkit-playsinline>
+              <source src="./video/hero.mp4" type="video/mp4">
+              </video>
+
+              <!-- Фоновое видео для мобильных -->
+              <video class="video-mobile" 
+              autoplay muted loop playsinline webkit-playsinline>
+              <source src="./video/hero-mob.mp4" type="video/mp4">
+              </video>
+
+              <!-- Картинка-заглушка (под видео) -->
+              <picture>
+                <source srcset="./img/banner.jpg" type="image/jpeg" media="(min-width:720px)">
+                  <source srcset="./img/banner-mob.jpg" type="image/jpeg" media="(min-width:200px)">
+                    <img src="./img/banner.jpg" alt="">
+                  </picture>
+
+                  <div class="banner__content">
+                    <div class="banner__lbl">Лучшему другу— лучшее!</div>
+                    <h1 class="h1-banner">Ветеринарная клиника <br> <span>«Раденис»</span> <br> вЗеленограде</h1>        
+                  </div>
+                </div>
+                <a href="" class="banner__btn btn">Записаться на приём</a>
+              </div>
+            </div>
+          </div><!--s-banner-->
+          <section class="s-services section">
+            <div class="contain">
+              <div class="h2-w">
+                <div class="h2">Услуги нашей <span>ветклиники</span></div>
+                <a href="" class="see-all">Посмотреть все услуги</a>
+              </div>
+              <div class="services__row">
+                <div class="services__col-1">
+                  <div class="services__item _s1">
+                    <div class="services__title">Направления</div>            
+                    <ul>              
+                      <li><a href="">Терапия</a></li>
+                      <li><a href="">Стационарное лечение</a></li>
+                      <li><a href="">Реаниматология</a></li>
+                      <li><a href="">Анестезиология</a></li>
+                      <li><a href="">Ортопедия</a></li>
+                      <li><a href="">Неврология</a></li>
+                      <li><a href="">Кардиология</a></li>
+                      <li><a href="">Пульмонология</a></li>
+                      <li><a href="">Гастроэнтерология</a></li>
+                      <li><a href="">Нефрология</a></li>
+                      <li><a href="">Онкология</a></li>
+                      <li><a href="">Дерматология</a></li>
+                      <li><a href="">Офтальмология</a></li>
+                      <li><a href="">Стоматология</a></li>
+                    </ul>
+                    <a href="" class="more-link">Еще 8 направлений</a>
+                    <a href="" class="more-arrow"></a>
+                    <img class="services__item-img" src="./img/serv-1.png" alt="">
+                  </div>
+                </div>
+                <div class="services__col-2">
+                  <div class="services__item _bg-or">
+                    <div class="services__title">Диагностика</div>            
+                    <ul>                      
+                      <li><a href="">УЗИ</a></li>
+                      <li><a href="">Эхокардиография</a></li>
+                      <li><a href="">ЭКГ</a></li>
+                      <li><a href="">Рентген диагностика</a></li>
+                      <li><a href="">Рентгеновские снимки</a></li>
+                    </ul>
+                    <a href="" class="more-link">Еще 17 услуг</a>
+                    <a href="" class="more-arrow"></a>
+                    <img class="services__item-img" src="./img/serv-2.png" alt="">
+                  </div>
+                  <div class="services__item">
+                    <div class="services__title">Хирургия</div>            
+                    <ul>                  
+                      <li><a href="">Стерилизация кошки</a></li>
+                      <li><a href="">Стерилизация собаки</a></li>
+                      <li><a href="">Кастрация кота</a></li>
+                      <li><a href="">Кастрация кобеля</a></li>
+                      <li><a href="">Стоматология</a></li>
+                    </ul>
+                    <a href="" class="more-link">Еще 14 услуг</a>
+                    <a href="" class="more-arrow"></a>
+                    <img class="services__item-img" src="./img/serv-3.png" alt="">
+                  </div>
+                  <div class="services__item _w100">
+                    <div class="services__title">Другие услугии возможности</div>            
+                    <ul>                           
+                      <li><a href="">Лечение гериатрических пациентов</a></li>   
+                      <li><a href="">Дневной стационар</a></li>   
+                      <li><a href="">Кардиологический скрининг перед операцией</a></li>   
+                      <li><a href="">Экспертная кардиология</a></li>   
+                    </ul>
+                    <a href="" class="more-link">Еще 6 услуг</a>
+                    <a href="" class="more-arrow"></a>            
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s-trust section">
+            <div class="contain">      
+              <div class="h2">
+                Почему нам доверяют <span>здоровье питомцев</span>
+              </div>
+              <div class="trust">
+                <div class="trust__l">  
+                  <img src="./img/trust.png" alt="">      
+                  <div class="trust__year">
+                    <div class="trust-year__content">
+                      <p>Нам 10 лет</p>
+                      <span>Наши специалисты входят  в Национальную ветеринарную палату, включая экспертов в стоматологии, ортопедии, неврологии и дерматологии.</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="trust__r">
+                  <div class="trust__items">
+                    <div class="trust__item">
+                      <div class="trust-item__top">
+                        <div class="trust-item__img">
+                          <img src="./img/trust-1.svg" alt="">
+                        </div>
+                        Полный спектр ветеринарных услуг в одном месте
+                      </div>
+                      <div class="trust-item__text">
+                        Диагностика (УЗИ, ЭХОКГ, ЭКГ, кардиообследование, рентген, лабораторные анализы), терапия, хирургия и профилактика.
+                      </div>
+                    </div><!---->
+                    <div class="trust__item">
+                      <div class="trust-item__top">
+                        <div class="trust-item__img">
+                          <img src="./img/trust-2.svg" alt="">
+                        </div>                
+                        Врачи-эксперты узких специализаций
+                      </div>
+                      <div class="trust-item__text">
+                        Кардиология, пульмонология, диетология, дерматология, неврология, онкология и др.У нас лечатся разные  животные, в том числе экзотические (грызуны, птицы)
+                      </div>
+                    </div><!---->
+                    <div class="trust__item">
+                      <div class="trust-item__top">
+                        <div class="trust-item__img">
+                          <img src="./img/trust-3.svg" alt="">
+                        </div>                
+                        Своя лаборатория и аптека при веткилинике
+                      </div>
+                      <div class="trust-item__text">
+                        Собственная лаборатория для быстрой диагностики и ветаптека со всеми необходимыми препаратами прямо в клинике.
+                      </div>
+                    </div><!---->
+                    <div class="trust__item">
+                      <div class="trust-item__top">
+                        <div class="trust-item__img">
+                          <img src="./img/trust-4.svg" alt="">
+                        </div>                
+                        Заботимся о питомце во время каждой операции
+                      </div>
+                      <div class="trust-item__text">
+                        На каждой операции, даже самой простой, работает бригада с анестезиологом. 
+                      </div>
+                    </div><!---->
+                    <div class="trust__item">
+                      <div class="trust-item__top">
+                        <div class="trust-item__img">
+                          <img src="./img/trust-5.svg" alt="">
+                        </div>                
+                        Отечественные и зарубежные вакцины в наличии
+                      </div>
+                      <div class="trust-item__text">
+                        Россия, Чехия, США.
+                      </div>
+                    </div><!---->
+                    <div class="trust__item">
+                      <div class="trust-item__top">
+                        <div class="trust-item__img">
+                          <img src="./img/trust-6.svg" alt="">
+                        </div>                
+                        Pet-friendly подход к лечению
+                      </div>
+                      <div class="trust-item__text">
+                        Комфортные условия для животных для снижения  уровня стресса во время визита и лечения.
+                      </div>
+                    </div><!---->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s-mabout">
+            <div class="contain">
+              <div class="mabout__row">
+                <div class="mabout__l">
+                  <a href="./video/hero.mp4" data-fancybox="mvideo">
+                    <img src="./img/mabout.jpg" alt="">
+                  </a>
+                </div>
+                <div class="mabout__r">
+                  <div class="h2">О клинике <span>«Раденис»</span></div>
+                  <p><b>Зеленоградскому филиалу “Раденис” 10 лет.</b> И за это время мы собрали команду, которой люди доверяют своих любимых питомцев: кошек, собак, птиц, грызунов и экзотических животных.</p>
+                  <p>Наш подход - <b>pet-friendly</b>. Мы не только работаем с животными, они - часть нашей жизни, ведь у врачей клиники тоже есть свои маленькие друзья. Поэтому мы очень хорошо понимаем и разделяем переживания каждого из вас за своего питомца.</p>
+                  <a href="" class="btn-o">Подробнее о клинике</a>
+                </div>
+              </div>          
+            </div>
+          </section>      
+          <section class="s-when">
+            <div class="contain">
+              <div class="when">
+                <div class="when__l">
+                  <div class="when__content">
+                    <div class="when__h2 h2 _wh">Когда нужно обратиться к врачу</div>
+                    <div class="when__text">Если заметили хотя бы один из этих признаков у своего питомца..</div>
+                  </div>
+                  <div class="when__btn-w" data-da=",.when__r,1199,3">
+                    <a href="" class="when__btn btn _blue">Запишитесь на прием</a>
+                  </div>
+                </div>
+                <div class="when__r">
+                  <ul class="when__sl">
+                    <li class="when__sl-item">Отказ от еды более суток</li>
+                    <li class="when__sl-item">Рвота или диарея</li>
+                    <li class="when__sl-item">Высокая температура</li>
+                    <li class="when__sl-item">Кровь в моче или стуле</li>
+                    <li class="when__sl-item">Покраснение или выделения из глаз</li>
+                    <li class="when__sl-item">Хромота, отказ от прогулок</li>
+                    <li class="when__sl-item">Учащённое или тяжёлое дыхание</li>
+                    <li class="when__sl-item">Резкая потеря шерсти</li>            
+                  </ul>          
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s-mdoctors">
+            <div class="contain">
+              <div class="h2-w">
+                <div class="h2">Наши <span>врачи</span></div>
+                <a href="" class="see-all _inv">Все врачи</a>
+              </div>
+            </div>
+            <div class="cpadding">
+              <div class="mdoctors__sl">
+                @@include('var/_doctors__item.html',{
+                  "img":"./img/doctor-1.jpg",
+                  "name":"Рачинский Денис Сергеевич",
+                  "dol":"Руководитель клиники, врач",
+                  "text":"Неврология, травматология, ортопедия, хирургия, рентген-диагностика"
+                })
+                @@include('var/_doctors__item.html',{
+                  "img":"./img/doctor-2.jpg",
+                  "name":"Абдуллина Алина Минтагировна",
+                  "dol":"Ветеринарный врач",
+                  "text":"Терапия, онкология"
+                })
+                @@include('var/_doctors__item.html',{
+                  "img":"./img/doctor-3.jpg",
+                  "name":"Васильева Виктория Вадимовна",
+                  "dol":"Ветеринарный врач",
+                  "text":"Терапия, онкология"
+                })
+                @@include('var/_doctors__item.html',{
+                  "img":"./img/doctor-4.jpg",
+                  "name":"Графкина Наталья Сергеевна",
+                  "dol":"Ветеринарный врач",
+                  "text":"Иерапия, УЗ-диагностика, гастроэнтерология"
+                })
+                @@include('var/_doctors__item.html',{
+                  "img":"./img/doctor-5.jpg",
+                  "name":"Грунтова Маргарита Сергеевна",
+                  "dol":"Руководитель клиники, врач",
+                  "text":"Терапия, стоматология"
+                })
+              </div>
+            </div>
+          </section>
+          <section class="s-mpromo">
+            <div class="contain">
+              <div class="h2-w">
+                <div class="h2"><span>Акции</span> клиники</div>
+                <a href="" class="see-all _inv">Все акции</a>
+              </div>
+            </div>
+            <div class="cpadding">
+              <div class="mpromo__sl">
+               @@include('var/_promo__item.html',{
+                 "title":"«Полная защита» — максимальный уход по выгодной цене!", 
+                 "img": "./img/promo-1.png",
+                 "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+               })
+               @@include('var/_promo__item.html',{
+                 "title":"-35% на чекап для собак и кошек",
+                 "img": "./img/promo-2.png",
+                 "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+               })
+               @@include('var/_promo__item.html',{
+                 "title":"«Полная защита» — максимальный уход по выгодной цене!", 
+                 "img": "./img/promo-1.png",
+                 "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+               })
+               @@include('var/_promo__item.html',{
+                 "title":"-35% на чекап для собак и кошек",
+                 "img": "./img/promo-2.png",
+                 "txt":"Уникальная акция: при вакцинации вашего четвероногого друга вы получаете бесплатный профилактический осмотр в подарок!"
+               })
+             </div>
+           </div>
+         </section>
+         @@include('var/_s-docs4.html')
+         <section class="s-mblog">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2">Полезная информация <span>для хозяев</span></div>
+              <a href="" class="see-all _inv" data-da=",.show-more__wrap,991,0">Все публикации</a>
+            </div>
+          </div>
+          <div class="cpadding">
+            <div class="blog__list mblog__list">
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-1.jpg",
+                "lbl": "Новость",
+                "title":"«Полная защита» — максимальный уход по выгодной цене!"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-2.jpg",
+                "lbl": "Статья",
+                "title":"Новая эра диагностики! Коагулограмма и ПЦР-исследования теперь прямо на приёме!"
+              })
+              @@include('var/_blog__item.html',{
+                "img":"./img/blog-3.jpg",
+                "lbl": "История",
+                "title":"Иногда для диагноза требуется 10 минут времени"
+              })
+            </div>
+            <div class="show-more__wrap">
+              <a href="" class="show-more-btn">Загрузить еще</a>
+            </div>
+          </div>
+        </section>
+        <section class="s-mreviews">
+          <div class="contain">
+            <div class="h2-w">
+              <div class="h2">Отзывы <span>пациентов</span></div>
+              <a href="" class="see-all _inv">Все отзывы</a>
+            </div>
+          </div>
+            <div class="mreviews__sl">
+              @@include('var/_reviews__item2.html')
+              @@include('var/_reviews__item.html')
+              @@include('var/_reviews__item.html')
+              @@include('var/_reviews__item.html')
+            </div>          
+        </section>
+        <section class="s-mrate">
+          <div class="contain">
+            <div class="mrate">
+              <div class="h2">Независимые <br> <span>рейтинги</span></div>
+              <div class="mrate__r">
+                <div class="mrate__item">
+                  <span>5 / 5</span>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <img src="./img/mrate-1.svg" alt="">
+                </div>
+                <div class="mrate__item">
+                  <span>5 / 5</span>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <img src="./img/mrate-2.svg" alt="">
+                </div>
+                <div class="mrate__item">
+                  <span>5 / 5</span>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <img src="./img/mrate-3.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        @@include('var/_hform.html')
+
+      </main>
+      @@include('var/_footer.html')
+    </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
